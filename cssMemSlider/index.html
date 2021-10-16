@@ -6,22 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>slider</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div class="slider">
-    <ul class="slider__list_img">
-      <li class="slider__item_img">
+<body class="body">
+  <section class="slider">
+    <input type="radio" name="slider" id="slide1" checked />
+    <input type="radio" name="slider" id="slide2" />
+    <input type="radio" name="slider" id="slide3" />
+    <input type="radio" name="slider" id="slide4" />
 
-      </li>
-    </ul>
+    <div class="slider__images">
+      <div class="slider__inner">
+        <img class="slider__img" src="assets/images/1.jpg" />
+        <img class="slider__img" src="assets/images/2.jpg" />
+        <img class="slider__img" src="assets/images/3.jpg" />
+        <img class="slider__img" src="assets/images/4.jpg" />
+      </div>
+    </div>
 
     <div class="flex">
-      <ul class="slider__list_text">
-        <li class="slider__item_img"></li>
-      </ul>
+      <div class="slider__texts">
+        <div class="slider__inner slider__inner_text">
+          <p class="slider__text">me attending a Zoom meeting at 8:00 in the morning after waking up at 7:59</p>
+
+          <p class="slider__text">every halloween party this year</p>
+
+          <p class="slider__text">i think i download the wrong version of squid game</p>
+
+          <p class="slider__text">feel old yet?</p>
+        </div>
+      </div>
+
+      <div id="active">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
     </div>
-  </div>
+  </section>
 </body>
 
 </html>
